@@ -1,7 +1,7 @@
 import { Image, Text, View, TextInput, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function App() {
+export default function Page_sing_Doctor({ navigation }) {
   return (
     <View
       className="flex-1  items-center   mt-4 "
@@ -13,25 +13,18 @@ export default function App() {
         <AntDesign name="arrowleft" size={24} color="black" />
       </View>
 
-      <View className="w-full mx-7 mt-7 mr-10">
-        <View className="flex-row   mx-7">
-          <View className=" flex-col  ">
-            <Text className="w-fit col-start-1  mt-4">Full name</Text>
-            <TextInput
-              className="w-36 h-10 bg-white  rounded-md  shadow-sm border-1 p-2 border-gray-400 "
-              placeholder={"First Name"}
-            />
-          </View>
+      <View className="w-full mx-7 mt-2 mr-10">
+        <Text className="  font-extrabold  self-center text-2xl mt-3 ">
+          Doctor
+        </Text>
 
-          <View className=" flex-col  ">
-            <Text className="w-fit col-start-1  mt-4">{""}</Text>
-            <TextInput
-              className="w-36 h-10 bg-white mx-7 rounded-md  shadow-sm border-1 p-2 border-gray-400 "
-              placeholder={"Second Name"}
-            />
-          </View>
+        <View className="w-full flex-col  ">
+          <Text className="w-fit col-start-1 mx-7 mt-4">Full name</Text>
+          <TextInput
+            className="w-80 h-10 bg-white mx-7 rounded-md  shadow-sm border-1 p-2 border-gray-400 "
+            placeholder={"Full name"}
+          />
         </View>
-
         <View className="w-full flex-col  ">
           <Text className="w-fit col-start-1 mx-7 mt-4">CIN</Text>
           <TextInput
@@ -61,7 +54,6 @@ export default function App() {
           />
         </View>
 
-
         <View className="w-full flex-col  ">
           <Text className="w-fit col-start-1 mx-7 mt-4">Password</Text>
           <TextInput
@@ -69,7 +61,6 @@ export default function App() {
             placeholder={"At least 8 characters"}
           />
         </View>
-
 
         <View className=" w-full items-center mt-4 ">
           <View className="flex-col ">

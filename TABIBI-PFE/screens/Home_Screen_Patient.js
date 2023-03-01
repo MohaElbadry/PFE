@@ -1,9 +1,13 @@
 import { Image, Text, View, TouchableOpacity } from "react-native";
+import { Feather } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons"; 
 
-export default function HomeScreen({navigation}) {
+export default function HomeScreen({ navigation }) {
   return (
     <View
-      className="pt-16 "
+      className="pt-16 flex-1 "
       style={{
         backgroundColor: "#F6F6F6",
       }}
@@ -42,6 +46,28 @@ export default function HomeScreen({navigation}) {
             source={require("../assets/4.png")}
             className="h-16  w-16 bg-pink-100 drop-shadow-xl rounded-lg p-3"
           />
+        </View>
+      </View>
+      <View className="absolute -bottom-0 self-center bg-white rounded-2xl h-14 p-3 w-full ">
+        <View className="flex-row space-x-10  align-middle justify-center  items-center justify-items-center">
+          <TouchableOpacity onPress={() => navigation.navigate("Home_Screen_Patient")}>
+            <Feather name="home" size={24} color="black" />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <FontAwesome name="list" size={21} color="black" />
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <View className=" bg-orange-600 rounded-full h-12 w-12 flex justify-center items-center">
+              <AntDesign name="pluscircleo" size={28} color="white" />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <AntDesign name="user" size={26} color="black" />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Chat_Doctor")}>
+            <Ionicons name="chatbox-outline" size={24} color="black" />
+          </TouchableOpacity>
         </View>
       </View>
     </View>

@@ -1,46 +1,37 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home_Screen_Patient from "./screens/Home_Screen_Patient";
+import Doc_Home_Screeen from "./screens/Doc_Home_Screeen";
 import Home from "./screens/Home";
 import Page_2 from "./screens/Page_2";
-import Page_sing_Patient from "./screens/Page_sing_Patient";
-import Page_sing_Doctor from "./screens/Page_sing_Doctor";
-import Page_Login_Patient from "./screens/Page_Login_Patient";
-import Page_Login_Doctor from "./screens/Page_Login_Doctor";
-import Chat_Doctor from "./screens/Chat_Doctor";
+import Pat_Sign from "./screens/Pat_Sign";
+import Pat_Login from "./screens/Pat_Login";
+import Doc_Sign from "./screens/Doc_Sign";
+import Doc_Login from "./screens/Doc_Login";
+import Doc_Chat from "./screens/Doc_Chat";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="Page_2"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Home" component={Home} />
-
-        <Stack.Screen
-          name="Home_Screen_Patient"
-          component={Home_Screen_Patient}
-        />
+        <Stack.Screen name="Doc_Home_Screeen" component={Doc_Home_Screeen} />
         <Stack.Screen name="Page_2" component={Page_2} />
-        <Stack.Screen name="Page_sing_Patient" component={Page_sing_Patient} />
-        <Stack.Screen name="Page_sing_Doctor" component={Page_sing_Doctor} />
-        <Stack.Screen name="Page_Login_Doctor" component={Page_Login_Doctor} />
-        <Stack.Screen name="Chat_Doctor" component={Chat_Doctor} />
-        <Stack.Screen
-          name="Page_Login_Patient"
-          component={Page_Login_Patient}
-        />
+        <Stack.Screen name="Pat_Sign" component={Pat_Sign} />
+        <Stack.Screen name="Pat_Login" component={Pat_Login} />
+        <Stack.Screen name="Doc_Sign" component={Doc_Sign} />
+        <Stack.Screen name="Doc_Login" component={Doc_Login} />
+        <Stack.Screen name="Doc_Chat" component={Doc_Chat} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-
-  /* <Tab.Navigator
+/* <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;

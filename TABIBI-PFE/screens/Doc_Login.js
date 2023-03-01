@@ -6,7 +6,7 @@ import {
   TextInput,
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
-export default function Page_2({ navigation }) {
+export default function Doc_Login({ navigation }) {
   return (
     <View
       className="flex-1 flex-col items-center   mt-4 "
@@ -19,9 +19,9 @@ export default function Page_2({ navigation }) {
           <AntDesign name="arrowleft" size={24} color="black" />
         </View>
         <Text className="  font-extrabold text-3xl mt-10 ">Tabibi</Text>
-        <Text className="  font-medium text-xl mt-3 ">Login As A Patien</Text>
+        <Text className="  font-medium text-xl mt-3 ">Login As A Doctor</Text>
       </View>
-      <View className="flex-col  w-full mt-18">
+      <View className="flex-col  w-full mt-12">
         <View className="w-full flex-col   ">
           <Text className="w-fit col-start-1 mx-7 mt-3">Email Address</Text>
           <TextInput
@@ -37,13 +37,13 @@ export default function Page_2({ navigation }) {
           />
         </View>
       </View>
-      <View className=" mx-10 mt-32">
+      <View className=" mx-10 mt-20">
         <View className="flex-col">
           <Text className="text-gray-300 mx-15">
             Don’t have an Account?
             <Text
               className="text-slate-900"
-              onPress={() => navigation.navigate("Page_sing_Patient")}
+              onPress={() => navigation.navigate("Doc_Sign")}
             >
               Sign Up
             </Text>
@@ -51,9 +51,9 @@ export default function Page_2({ navigation }) {
         </View>
         <TouchableOpacity
           className="mt-3 w-60 h-12 justify-center self-center shadow-lg bg-teal-400 rounded-lg"
-          onPress={() => navigation.navigate("Home_Screen_Patient")}
+          onPress={() => navigation.navigate("Doc_Home_Screeen")}
         >
-          <Text className=" self-center text-white text-xl">Login IN</Text>
+          <Text className=" self-center text-white text-xl">Next</Text>
         </TouchableOpacity>
       </View>
     </View>

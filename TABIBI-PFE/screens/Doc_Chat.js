@@ -5,7 +5,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function Chat_Doctor({ navigation }) {
+export default function Doc_Chat({ navigation }) {
   return (
     <View className="flex-1  items-center ">
       <View
@@ -18,7 +18,7 @@ export default function Chat_Doctor({ navigation }) {
           name="arrowleft"
           size={24}
           color="white"
-          onPress={() => navigation.navigate("Home_Screen_Patient")}
+          onPress={() => navigation.navigate("Doc_Home_Screeen")}
         />
         <Text className="text-xl text-white font-extrabold">Messages</Text>
         <Image
@@ -32,7 +32,9 @@ export default function Chat_Doctor({ navigation }) {
 
       <View className="absolute -bottom-0 self-center bg-white rounded-2xl h-14 p-3 w-full ">
         <View className="flex-row space-x-10  align-middle justify-center  items-center justify-items-center">
-          <TouchableOpacity onPress={() => navigation.navigate("Home_Screen_Patient")}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Doc_Home_Screeen")}
+          >
             <Feather name="home" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity>
@@ -47,7 +49,7 @@ export default function Chat_Doctor({ navigation }) {
           <TouchableOpacity>
             <AntDesign name="user" size={26} color="black" />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("Chat_Doctor")}>
+          <TouchableOpacity onPress={() => navigation.navigate("Doc_Chat")}>
             <Ionicons name="chatbox-outline" size={24} color="black" />
           </TouchableOpacity>
         </View>

@@ -1,7 +1,7 @@
 import { Image, Text, View, TextInput, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function Page_sing_Patient({ navigation }) {
+export default function Pat_Sign({ navigation }) {
   return (
     <View
       className="flex-1  items-center   mt-4 "

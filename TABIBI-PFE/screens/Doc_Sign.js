@@ -1,7 +1,7 @@
 import { Image, Text, View, TextInput, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function Page_sing_Doctor({ navigation }) {
+export default function Doc_Sign({ navigation }) {
   return (
     <View
       className="flex-1  items-center   mt-4 "
@@ -63,13 +63,10 @@ export default function Page_sing_Doctor({ navigation }) {
         </View>
 
         <View className=" w-full items-center mt-4 ">
-          <View className="flex-col ">
-            <Text className="text-gray-500 mx-15">
-              Don’t have an Account?
-              <Text className="text-slate-900">Sign Up</Text>
-            </Text>
-          </View>
-          <TouchableOpacity className="mt-3 w-60 h-10 justify-center self-center shadow-lg bg-teal-400 rounded-lg">
+          <TouchableOpacity
+            className="mt-3 w-60 h-10 justify-center self-center shadow-lg bg-teal-400 rounded-lg"
+            onPress={() => navigation.navigate("Doc_Home_Screeen")}
+          >
             <Text className=" self-center text-white text-xl">Next</Text>
           </TouchableOpacity>
         </View>

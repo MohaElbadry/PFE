@@ -4,7 +4,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons"; 
 
-export default function HomeScreen({ navigation }) {
+export default function Doc_Home_Screeen({ navigation }) {
   return (
     <View
       className="pt-16 flex-1 "
@@ -50,7 +50,7 @@ export default function HomeScreen({ navigation }) {
       </View>
       <View className="absolute -bottom-0 self-center bg-white rounded-2xl h-14 p-3 w-full ">
         <View className="flex-row space-x-10  align-middle justify-center  items-center justify-items-center">
-          <TouchableOpacity onPress={() => navigation.navigate("Home_Screen_Patient")}>
+          <TouchableOpacity onPress={() => navigation.navigate("Doc_Home_Screeen")}>
             <Feather name="home" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity>
@@ -65,7 +65,7 @@ export default function HomeScreen({ navigation }) {
           <TouchableOpacity>
             <AntDesign name="user" size={26} color="black" />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("Chat_Doctor")}>
+          <TouchableOpacity onPress={() => navigation.navigate("Doc_Chat")}>
             <Ionicons name="chatbox-outline" size={24} color="black" />
           </TouchableOpacity>
         </View>

@@ -25,7 +25,7 @@ export default function Page_3({ navigation }) {
       <View className="basis-1/3 flex-col items-center  w-full ">
         <Text className="  font-bold mt-6">Choisir</Text>
         <TouchableOpacity className="  w-60 h-12 justify-center self-center mt-4 shadow-sm bg-cyan-600 rounded-lg"
-          onPress={() => navigation.navigate("Page_Login_Doctor")}
+          onPress={() => navigation.navigate("Doc_Login")}
         >
           <Text
             className=" self-center text-white text-xl font-bold"
@@ -35,7 +35,7 @@ export default function Page_3({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity className=" w-60 h-12 justify-center self-center mt-3 shadow-lg bg-pink-500 rounded-lg"
         
-          onPress={() => navigation.navigate("Page_Login_Patient")}
+          onPress={() => navigation.navigate("Pat_Login")}
         >
           <Text
             className=" self-center text-white text-xl font-bold"

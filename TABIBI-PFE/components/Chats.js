@@ -20,99 +20,36 @@ const data = [
     msg: "Hello thh!",
     time: "07:30",
     date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },{
-    id: "123",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello thh!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
-  },
-  {
-    id: "1253",
-    title: "My Own",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello there!",
-    time: "07:30",
-    date: new Date().toLocaleDateString(),
   },
   {
     id: "1234",
     title: "My Own",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    msg: "Hello there!",
+    msg: "Hello thh!",
+    time: "07:30",
+    date: new Date().toLocaleDateString(),
+  },
+  {
+    id: "1235",
+    title: "My Own",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    msg: "Hello thh!",
+    time: "07:30",
+    date: new Date().toLocaleDateString(),
+  },
+  {
+    id: "12356",
+    title: "My Own",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    msg: "Hello thh!",
     time: "07:30",
     date: new Date().toLocaleDateString(),
   },
 ];
-export default function Chats() {
+export default function Chats({ navigation }) {
   // useEffect(() => {
   //   console.log(data);
   // }, []);
@@ -124,16 +61,22 @@ export default function Chats() {
         keyExtractor={(item) => item.id}
         showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.chatContainer}>
-            <Image
-              style={{
-                width: 50,
-                height: 50,
-                resizeMode: "contain",
-                borderRadius: 50,
-              }}
-              source={{ uri: item.image }}
-            />
+          <TouchableOpacity
+            style={styles.chatContainer}
+            >
+            <TouchableOpacity
+            onPress={() => navigation.navigate("Doc_Patient_Traitment")} name="HELLOOO"
+            >
+              <Image
+                style={{
+                  width: 50,
+                  height: 50,
+                  resizeMode: "contain",
+                  borderRadius: 50,
+                }}
+                source={{ uri: item.image }}
+              />
+            </TouchableOpacity>
 
             <View style={styles.chatTextContainer}>
               <View style={styles.chatTextTop}>

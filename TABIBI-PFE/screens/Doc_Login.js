@@ -38,22 +38,11 @@ export default function Doc_Login({ navigation }) {
         </View>
       </View>
       <View className=" mx-10 mt-20">
-        <View className="flex-col">
-          <Text className="text-gray-300 mx-15">
-            Don’t have an Account?
-            <Text
-              className="text-slate-900"
-              onPress={() => navigation.navigate("Doc_Sign")}
-            >
-              Sign Up
-            </Text>
-          </Text>
-        </View>
         <TouchableOpacity
           className="mt-3 w-60 h-12 justify-center self-center shadow-lg bg-teal-400 rounded-lg"
           onPress={() => navigation.navigate("Doc_Home_Screeen")}
         >
-          <Text className=" self-center text-white text-xl">Next</Text>
+          <Text className=" self-center text-white text-xl">Login</Text>
         </TouchableOpacity>
       </View>
     </View>

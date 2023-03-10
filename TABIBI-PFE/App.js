@@ -6,16 +6,17 @@ import Home from "./screens/Home";
 import Page_2 from "./screens/Page_2";
 import Pat_Sign from "./screens/Pat_Sign";
 import Pat_Login from "./screens/Pat_Login";
-import Doc_Sign from "./screens/Doc_Sign";
 import Doc_Login from "./screens/Doc_Login";
 import Doc_Chat from "./screens/Doc_Chat";
-
+import Doc_Patient_Traitment from "./screens/Doc_Patient_Traitment";
+import Doc_Profile from "./screens/Doc_Profile";
+import Doc_Ajout_Traitement from "./screens/Doc_Ajout_Traitement";
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Page_2"
+        initialRouteName="Home"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Home" component={Home} />
@@ -23,9 +24,17 @@ export default function App() {
         <Stack.Screen name="Page_2" component={Page_2} />
         <Stack.Screen name="Pat_Sign" component={Pat_Sign} />
         <Stack.Screen name="Pat_Login" component={Pat_Login} />
-        <Stack.Screen name="Doc_Sign" component={Doc_Sign} />
         <Stack.Screen name="Doc_Login" component={Doc_Login} />
         <Stack.Screen name="Doc_Chat" component={Doc_Chat} />
+        <Stack.Screen name="Doc_Profile" component={Doc_Profile} />
+        <Stack.Screen
+          name="Doc_Ajout_Traitement"
+          component={Doc_Ajout_Traitement}
+        />
+        <Stack.Screen
+          name="Doc_Patient_Traitment"
+          component={Doc_Patient_Traitment}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

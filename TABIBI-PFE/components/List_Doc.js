@@ -8,9 +8,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React, { useEffect } from "react";
-import { Ionicons } from "@expo/vector-icons";
 
-const WIDTH = Dimensions.get("window").width;
+const WIDTH = Dimensions.get("window").width - 30;
+
 const data = [
   {
     id: "123",
@@ -20,6 +20,8 @@ const data = [
     msg: "Hello thh!",
     time: "07:30",
     date: new Date().toLocaleDateString(),
+    about:
+      "Ex- Professor & Head of Department Department of Neurosurgery Dhaka Medical College & Hospital Ex- Professor & Head of Department Department of Neurosurgery Dhaka Medical College & Hospital",
   },
   {
     id: "1234",
@@ -29,6 +31,8 @@ const data = [
     msg: "Hello thh!",
     time: "07:30",
     date: new Date().toLocaleDateString(),
+    about:
+      "Ex- Professor & Head of Department Department of Neurosurgery Dhaka Medical College & Hospital Ex- Professor & Head of Department Department of Neurosurgery Dhaka Medical College & Hospital",
   },
   {
     id: "1235",
@@ -38,6 +42,8 @@ const data = [
     msg: "Hello thh!",
     time: "07:30",
     date: new Date().toLocaleDateString(),
+    about:
+      "Ex- Professor & Head of Department Department of Neurosurgery Dhaka Medical College & Hospital Ex- Professor & Head of Department Department of Neurosurgery Dhaka Medical College & Hospital",
   },
   {
     id: "12356",
@@ -47,13 +53,13 @@ const data = [
     msg: "Hello thh!",
     time: "07:30",
     date: new Date().toLocaleDateString(),
+    about:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
 ];
-export default function Chats({ navigation }) {
-  // useEffect(() => {
-  //   console.log(data);
-  // }, []);
 
+export default function List_Doc({ navigation }) {
+  console.log(data);
   return (
     <View>
       <FlatList
@@ -63,28 +69,25 @@ export default function Chats({ navigation }) {
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.chatContainer}
-            >
-            <TouchableOpacity
-            onPress={() => navigation.navigate("Doc_Patient_Traitment")} name="HELLOOO"
-            >
-              <Image
-                style={{
-                  width: 50,
-                  height: 50,
-                  resizeMode: "contain",
-                  borderRadius: 50,
-                }}
-                source={{ uri: item.image }}
-              />
-            </TouchableOpacity>
+            onPress={() => navigation.navigate("Pat_Med_Profile")}
+          >
+            <Image
+              style={{
+                width: 64,
+                height: 64,
+                resizeMode: "contain",
+                borderRadius: 15,
+              }}
+              source={{ uri: item.image }}
+            />
 
             <View style={styles.chatTextContainer}>
               <View style={styles.chatTextTop}>
                 <Text style={styles.title}>{item.title}</Text>
-                <Text style={styles.time}>{item.time}</Text>
               </View>
               <View style={styles.chatTextBottom}>
-                <Text style={styles.msg}>{item.msg}</Text>
+                <Text style={styles.msg}>Cardiologist in apolo hospital</Text>
+                <Text style={styles.msg}>About</Text>
               </View>
             </View>
           </TouchableOpacity>
@@ -97,8 +100,8 @@ export default function Chats({ navigation }) {
 const styles = StyleSheet.create({
   chatContainer: {
     flexDirection: "row",
-    marginHorizontal: 10,
-    marginVertical: 10,
+    marginHorizontal: 20,
+    marginVertical: 14,
   },
   chatTextContainer: {
     marginLeft: 10,
@@ -110,10 +113,7 @@ const styles = StyleSheet.create({
     width: WIDTH * 0.8,
   },
   chatTextBottom: {
-    flexDirection: "row",
     justifyContent: "space-between",
-    // alignItems: "center",
-    // width: 200,
     width: WIDTH * 0.8,
   },
   title: {
@@ -124,7 +124,8 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   msg: {
-    fontSize: 15,
     marginLeft: 5,
+    fontSize: 13,
+    color: "darkgray",
   },
 });

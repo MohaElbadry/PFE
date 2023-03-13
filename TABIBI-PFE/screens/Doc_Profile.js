@@ -53,13 +53,15 @@ export default function Doc_Profile({ navigation }) {
       <View className="absolute -bottom-0 self-center bg-white rounded-2xl h-14 p-3 w-full ">
         <View className="flex-row space-x-14  align-middle justify-center  items-center justify-items-center">
           <TouchableOpacity
-            onPress={() => navigation.navigate("Doc_Home_Screeen")}
+            onPress={() => navigation.navigate("Doc_Home_Screen")}
           >
             <AntDesign name="home" size={24} color="black" />
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => navigation.navigate("Doc_Chat")}>
-            <View className=" bg-orange-600 rounded-full h-12 w-12 flex justify-center items-center">
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Doc_List_Patient")}
+          >
+            <View className=" bg-[#E64646] rounded-full h-10 w-10 flex justify-center items-center">
               <AntDesign name="pluscircleo" size={28} color="white" />
             </View>
           </TouchableOpacity>

@@ -40,7 +40,7 @@ export default function Doc_Login({ navigation }) {
       <View className=" mx-10 mt-20">
         <TouchableOpacity
           className="mt-3 w-60 h-12 justify-center self-center shadow-lg bg-teal-400 rounded-lg"
-          onPress={() => navigation.navigate("Doc_Home_Screeen")}
+          onPress={() => navigation.navigate("Doc_Home_Screen")}
         >
           <Text className=" self-center text-white text-xl">Login</Text>
         </TouchableOpacity>

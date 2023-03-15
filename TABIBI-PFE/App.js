@@ -14,12 +14,27 @@ import Doc_Ajout_Traitement from "./screens/Doc_Ajout_Traitement";
 import Pat_Home_Screen from "./screens/Pat_Home_Screen";
 import Pat_List_Doc from "./screens/Pat_List_Doc";
 import Pat_Med_Profile from "./screens/Pat_Med_Profile";
+import Pat_List_Traitement from "./screens/Pat_List_Traitement";
+import Pat_Profile from "./screens/Pat_Profile";
+
+const config = {
+  animation: "spring",
+  config: {
+    stiffness: 1000,
+    damping: 500,
+    mass: 3,
+    overshootClamping: true,
+    restDisplacementThreshold: 0.01,
+    restSpeedThreshold: 0.01,
+  },
+};
+
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="Pat_Profile"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Home" component={Home} />
@@ -41,6 +56,11 @@ export default function App() {
         <Stack.Screen name="Pat_Home_Screen" component={Pat_Home_Screen} />
         <Stack.Screen name="Pat_List_Doc" component={Pat_List_Doc} />
         <Stack.Screen name="Pat_Med_Profile" component={Pat_Med_Profile} />
+        <Stack.Screen
+          name="Pat_List_Traitement"
+          component={Pat_List_Traitement}
+        />
+        <Stack.Screen name="Pat_Profile" component={Pat_Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

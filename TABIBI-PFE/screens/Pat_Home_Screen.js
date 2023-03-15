@@ -75,10 +75,12 @@ export default function Pat_Home_Screen({ navigation }) {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => navigation.navigate("")}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Pat_List_Traitement")}
+          >
             <Ionicons name="chatbox-outline" size={24} color="black" />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("")}>
+          <TouchableOpacity onPress={() => navigation.navigate("Pat_Profile")}>
             <AntDesign name="user" size={26} color="black" />
           </TouchableOpacity>
         </View>

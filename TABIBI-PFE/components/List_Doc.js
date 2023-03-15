@@ -14,7 +14,7 @@ const WIDTH = Dimensions.get("window").width - 30;
 const data = [
   {
     id: "123",
-    title: "My Own",
+    title: "Abdlomghit",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     msg: "Hello thh!",
@@ -25,7 +25,7 @@ const data = [
   },
   {
     id: "1234",
-    title: "My Own",
+    title: "Moha",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     msg: "Hello thh!",
@@ -47,7 +47,7 @@ const data = [
   },
   {
     id: "12356",
-    title: "My Own",
+    title: "Youness",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     msg: "Hello thh!",
@@ -59,7 +59,6 @@ const data = [
 ];
 
 export default function List_Doc({ navigation }) {
-  console.log(data);
   return (
     <View>
       <FlatList
@@ -69,7 +68,7 @@ export default function List_Doc({ navigation }) {
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.chatContainer}
-            onPress={() => navigation.navigate("Pat_Med_Profile")}
+            onPress={() => navigation.navigate("Pat_Med_Profile",{item})}
           >
             <Image
               style={{

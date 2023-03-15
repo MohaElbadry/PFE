@@ -1,7 +1,12 @@
 import { Image, Text, View, TextInput, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import { useRoute } from "@react-navigation/native";
 
 export default function Pat_Med_Profile({ navigation }) {
+    const route = useRoute();
+
+  const data = route.params;
+  console.log(data);
   return (
     <View className="flex-1 flex-col items-center mp-4 ">
       <View className=" flex  bg-[#1C6BA4] w-full px-4 pb-8 rounded-b-3xl drop-shadow-xl flex-row pt-16 justify-between">
@@ -25,7 +30,7 @@ export default function Pat_Med_Profile({ navigation }) {
             className="h-16 self-start w-16 m-2 drop-shadow-xl rounded-lg "
           />
           <View className="ml-3 flex flex-col ">
-            <Text className="font-bold text-xl mt-2 ">Dr. Wilson</Text>
+            <Text className="font-bold text-xl mt-2 ">Dr. {data.item.title}</Text>
             <Text className="text-gray-400 text-xs w-44">
               General Pulmonologist
             </Text>
